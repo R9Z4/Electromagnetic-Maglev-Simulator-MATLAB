@@ -1,0 +1,6 @@
+# MATLAB autosave and temporary files
+*.asv
+*.tmp
+
+# Word documents
+*.docx
