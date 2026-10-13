@@ -10,19 +10,20 @@ Developed as a comprehensive project bridging **Electromagnetic Field Theory** a
 
 The system operates based on direct electromechanical energy conversion. A moving unit consisting of a chemical battery and two neodymium dipole magnets travels through a bare copper coil tunnel:
 
-1. **Ampere's Circuital Law:**  
-   $$\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc}} \implies B \approx \mu_0 n I$$  
-   Current flow between the conducting magnets magnetizes the active section of the coil.
+### 1. Ampere's Circuital Law
+Current flow between the conducting magnets magnetizes the active section of the coil, establishing a localized magnetic field:
 
-2. **Magnetic Propulsion Force:**  
-   The force on the neodymium dipoles ($ \vec{m} $) within the non-uniform magnetic field gradient is computed as:  
-   $$\vec{F}_{\text{mag}} = \nabla (\vec{m} \cdot \vec{B})$$
+$$\oint \vec{B} \cdot d\vec{l} = \mu_0 I_{\text{enc}} \quad \Longrightarrow \quad B \approx \mu_0 n I$$
 
-3. **Nonlinear Equation of Motion:**  
-   Accounting for magnetic propulsive force, Coulomb friction, and viscous aerodynamic/eddy drag:  
-   $$m \frac{dv}{dt} = F_{\text{mag}} - \mu m g - c v$$
+### 2. Magnetic Propulsion Force
+The propulsive force exerted on the neodymium dipoles ($\vec{m}$) within the non-uniform magnetic field gradient is computed as:
 
----
+$$\vec{F}_{\text{mag}} = \nabla (\vec{m} \cdot \vec{B})$$
+
+### 3. Nonlinear Equation of Motion
+Accounting for the magnetic propulsive force, Coulomb friction, and viscous aerodynamic/eddy drag:
+
+$$m \frac{dv}{dt} = F_{\text{mag}} - \mu m g - c v$$
 
 ## Features & Implementation Architecture
 
